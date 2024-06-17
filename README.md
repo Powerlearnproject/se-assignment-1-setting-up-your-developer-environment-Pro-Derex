@@ -144,6 +144,7 @@ sh
 code;
 internet start MySQL
 I checked MySQL Workbench logs for any mistakes.
+
 Conclusion
 This document covers the installation and configuration of essential tools for my developer environment on Windows 11, including Git, Python, Visual Studio Code, and MySQL. Following these steps helped me set up my environment efficiently and resolve common issues that arose.
 
