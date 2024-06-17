@@ -35,6 +35,117 @@ This assignment aims to familiarize you with the tools and configurations necess
 
 9. Document Your Setup:
     Create a comprehensive document outlining the steps you've taken to set up your developer environment. Include any configurations, customizations, or troubleshooting steps encountered during the process. 
+ANSWER
+Developer Environment Setup Documentation
+Overview
+This document outlines the steps I took to set up my developer environment on Windows eleven, along with configurations, customizations, and troubleshooting steps I encountered at some point of the procedure.
+
+System Information
+Operating System: Windows 11 was downloaded from https://www.microsoft.com/software-download/windows11
+Primary Tools: Visual Studio Code, Git, Python
+Additional Tools: MySQL
+1. Installing and Configuring Git
+Installation Steps:
+
+I downloaded the Git installer from Git for Windows.
+I ran the installer and followed the default setup commands.
+I made positive that the choice "Git Bash Here" changed into checked for easy get entry to to Git commands.
+Configuration:
+
+I set my worldwide username and e-mail:
+code;
+git config --worldwide user.Name "My Name"
+git config --international consumer.E-mail "my.Electronic mail@example.Com"
+I tested the configuration:
+code;
+git config --list
+Troubleshooting:
+
+To make certain the git command was identified, I opened Git Bash or Command Prompt and typed git --version.
+
+﻿2. Installing Python and pip
+Installation Steps:
+
+I downloaded the Python installer from Python.Org.
+I ran the installer and made sure that the "Add Python to PATH" alternative become checked.
+I followed the default setup commands to complete the installation.
+Verification:
+
+I opened Command Prompt and checked the Python model:
+code;
+python --model
+I checked the pip version:
+code;
+pip --version
+Troubleshooting:
+
+If Python and pip were not delivered to the PATH, I manually introduced the Python set up directory to the PATH surroundings variable.
+
+﻿3. Setting Up Visual Studio Code (VS Code)
+Installation Steps:
+
+I downloaded the installer from https://code.visualstudio.com/Download.
+I ran the installer and accompanied the setup instructions.
+Essential Extensions:
+
+Python
+GitLens
+Prettier - Code Formatter
+Configuration:
+
+I opened VS Code and went to File > Preferences > Settings or pressed Ctrl   ,.
+I configured person settings (e.G., enabled layout on store):
+json
+code;
+
+    "editor.FormatOnSave": real,
+    "python.PythonPath": "C:PathToPythonpython.Exe"
+
+I set up the incorporated terminal to apply Git Bash:
+json
+code;
+
+    "terminal.Included.Shell.Home windows": "C:Program FilesGitbinbash.Exe"
+
+Troubleshooting:
+
+For extension troubles, I reinstalled the extension or checked the extension logs.
+For overall performance issues, I disabled useless extensions.
+
+4. Installing MySQL
+Installation Steps:
+
+I downloaded the MySQL Installer for Windows from https://dev.mysql.com/downloads/installer/.
+I ran the installer and selected the "Developer Default" setup type.
+I followed the setup commands to put in MySQL Server, MySQL Workbench, and different components.
+Configuration:
+
+During set up, I installation a root password and configured MySQL as a Windows carrier.
+I finished the installation and started the MySQL carrier.
+Creating a New Database and User:
+
+I opened MySQL Workbench and connected to the local MySQL server.
+I created a new database and person:
+sql.
+code;
+CREATE DATABASE mydb;
+CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'mypassword';
+GRANT ALL PRIVILEGES ON mydb.* TO 'myuser'@'localhost';
+FLUSH PRIVILEGES;
+Verification:
+
+I related to the MySQL database using MySQL Workbench or Command Prompt:
+code;
+mysql -u myuser -p mydb
+Troubleshooting:
+
+I ensured the MySQL provider became going for walks:
+sh
+code;
+internet start MySQL
+I checked MySQL Workbench logs for any mistakes.
+Conclusion
+This document covers the installation and configuration of essential tools for my developer environment on Windows 11, including Git, Python, Visual Studio Code, and MySQL. Following these steps helped me set up my environment efficiently and resolve common issues that arose.
 
 #Deliverables:
 - Document detailing the setup process with step-by-step instructions and screenshots where necessary.
